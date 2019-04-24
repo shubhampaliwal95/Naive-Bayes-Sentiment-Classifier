@@ -34,12 +34,12 @@ def prediction(Data,bag,positive_Words,negative_Words,unique_pos,unique_neg):
 			if(n>4):
 				try:
 					#print(bag[word][0])
-					negative_Prob*=((bag[word][0]+1)/(num_Neg))			
+					negative_Prob*=((bag[word][0]+1)/(unique_neg))			
 				except:
 					negative_Prob*=1.0
 				try:
 					#print(bag[word][])
-					positive_Prob*=((bag[word][1]+1)/(num_Pos))
+					positive_Prob*=((bag[word][1]+1)/(unique_pos))
 				except:
 					positive_Prob*=1.0
 		#print(positive_Prob)
