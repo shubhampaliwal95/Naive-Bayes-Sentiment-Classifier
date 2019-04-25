@@ -67,6 +67,8 @@ def prediction(Data,bag,positive_Words,negative_Words,unique_pos,unique_neg):
 	Recall = mat[1][1]/(mat[1][1]+mat[1][0])
 	print('Precision is: '+str(Precision))
 	print('Recall is: '+str(Recall))
+	f1_score = (2*Precision*Recall)/(Precision+Recall)
+	print('F1 score is: '+str(f1_score))
 
 
 
